@@ -1,24 +1,28 @@
-import { log } from "./utils/logger";
-import { apiRoot } from "./handson/client";
+import { log } from "../utils/logger";
+import { pocApiRoot } from "./handson/client";
 
-// TODO: Complete the functions in
-// ./handson/client.ts
+// Learning Goals
+// Api Clients
+// Get, Post
 
+// TODO Step 1: Provide credentials in .env
+// TODO Step 2: Check ClientService.java
+        
 // So this code displays the project configuration
 // https://docs.commercetools.com/http-api-projects-project.html#get-project
 
-// TODO: Get project settings
+// TODO Step 3:: Get project settings
 
-apiRoot
+pocApiRoot
     .get()
     .execute()
     .then(log)
     .catch(log);
 
 
-// TODO: Get shipping method by id
+// TODO Step 4: Get shipping method by id
 
-// apiRoot
+// pocApiRoot
 //     .shippingMethods()
 //     .withId({ ID: "996fe73b-de00-4f3a-b9e1-1f1a3bbec5d3" })
 //     .get()
@@ -27,9 +31,9 @@ apiRoot
 //     .catch(log);
 
 
-// TODO: Get standard tax category by key
+// TODO Step 5: Get standard tax category by key
 
-// apiRoot
+// pocApiRoot
 //     .taxCategories()
 //     .withKey({ key: "standard-tax-category" })
 //     .get()

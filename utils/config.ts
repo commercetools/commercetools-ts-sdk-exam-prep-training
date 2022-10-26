@@ -3,8 +3,9 @@ import { config } from "dotenv";
 config();
 
 export const enum Prefix {
-    DEV = "DEV",
-    IMPORT = "IMPORT",
+    POC = "POC",
+    CONCEPT = "CONC_RO",
+    IMPORT = "POC",
     STORE = "BERLIN",
     ME = "ME",
     STORE_ME = "BERLIN_ME",
